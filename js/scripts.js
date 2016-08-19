@@ -1,30 +1,30 @@
 //Back-end
-var convert = function(number) {
-  var answer = "";
-  for (var i = 1; i <= number; i++) {
+var convert = function(input) {
+  var reply = "";
+  for (var i = 1; i <= input; i++) {
     if (i % 15 === 0) {
-      answer += "pingpong";
+      reply += "pingpong" + "<br>";
     } else if (i % 5 === 0) {
-      answer += "pong";
+      reply += "pong" + "<br>";
     } else if (i % 3 === 0) {
-      answer += "ping";
+      reply += "ping" + "<br>";
     } else {
-      answer += i;
+      reply += i + "<br>";
     }
   }
-     return answer;
+     return reply;
 };
-//
-  //$("#results").append(inputNumber.toString());?
 
 //front-end
 $(document).ready(function() {
   $("form#pingpong").submit(function(event){
     var inputNumber = parseInt($("#numberinput").val());
-    var result = convert(inputNumber);
+    var reply = convert(inputNumber);
 
-    $(".result").append(result.toString());
-    $("#results").show();
+    $(".result").append(reply);
+
+
+    $("#results").append();
 
 
 
