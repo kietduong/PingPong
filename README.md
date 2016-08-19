@@ -20,7 +20,7 @@ _This webpage will use HTML, CSS, Javascript, and JQuery to take a number that u
 
 ###### The program will return every number divisible by 3and replace it with "ping"
 * _Example Input: 3_
-* _Example Output: 1, 2, ping_
+* _Example Output: 1, 2, "ping"._
 
 ###### The program will return every number divisible by 5 and return it with "pong".
 * _Example Input: 5_

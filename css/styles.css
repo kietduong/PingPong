@@ -1,3 +1,16 @@
 #results{
   margin: 30px;
 }
+
+body{
+ background-color: #7FFFD4;
+}
+
+h1{
+  font-family: fantasy;
+}
+
+.jumbotron{
+  margin: 25px; 
+  background-color: #ff0066;
+}
