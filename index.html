@@ -6,21 +6,24 @@
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>Ping Pong Counting</title>
   </head>
   <body>
-    <div class="container">
-      <h1 class="page-header">Ping Pong</h1>
-      <form id="ping-pong">
-        <div class="form-group">
-          <label for="number-input">Enter your number!</label>
-          <input id="number-input" type="text" class="form-control">
+    <div class="jumbotron">
+      <h1 class="page-header">Ping Pong </h1>
+    </div>
+    <div class="container-fluid">
+      <form id="pingpong">
+        <div class="form-inline">
+          <label for="numberinput">Enter your number!</label>
+          <input id="numberinput" type="text" class="form-control">
         </div>
         <button type="submit" class="btn btn-success">Play some pong!</button>
       </form>
+    </div>
       <div id="results">
         <p>
-          <span class="results"></span>
+          <span class="result"></span>
         </p>
       </div>
     </div>

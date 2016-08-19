@@ -10,9 +10,9 @@ _This webpage will use HTML, CSS, Javascript, and JQuery to take a number that u
 
 ###### Specs:
 
-###### The program does nothing to non-numerical characters.
-* _Example Input: _
-* _Example Output:_
+###### The program does nothing to non-numerical characters. PASSED
+* _Example Input: add _
+* _Example Output: alert "..."_
 
 ###### The program will take an input number and count tothat number from zero
 * _Example Input: 5_
