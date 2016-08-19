@@ -20,14 +20,10 @@ $(document).ready(function() {
   $("form#pingpong").submit(function(event){
     var inputNumber = parseInt($("#numberinput").val());
     var reply = convert(inputNumber);
-
-    $(".result").append(reply);
-
-
-    $("#results").append();
-
-
-
+    if (!inputNumber) {
+      alert ("Please enter a number you intelligent beast, you ;)");
+    } else {$(".result").append(reply);
     event.preventDefault();
+    }
   });
 });
