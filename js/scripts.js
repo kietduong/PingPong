@@ -1,15 +1,17 @@
 //Back-end
+var reply = [];
+
 var convert = function(input) {
-  var reply = "";
+
   for (var i = 1; i <= input; i++) {
     if (i % 15 === 0) {
-      reply += "pingpong" + "<br>";
+      reply.push("pingpong");
     } else if (i % 5 === 0) {
-      reply += "pong" + "<br>";
+      reply.push("pong");
     } else if (i % 3 === 0) {
-      reply += "ping" + "<br>";
+      reply.push("ping");
     } else {
-      reply += i + "<br>";
+      reply.push(i);
     }
   }
      return reply;
@@ -19,10 +21,14 @@ var convert = function(input) {
 $(document).ready(function() {
   $("form#pingpong").submit(function(event){
     var inputNumber = parseInt($("#numberinput").val());
-    var reply = convert(inputNumber);
+    convert(inputNumber);
     if (!inputNumber) {
       alert ("Please enter a number you intelligent beast, you ;)");
-    } else {$(".result").append(reply);
+    } else {
+      for(var i = 0; i < reply.length ; i ++)
+      {
+        $(".result").append("<li>" + reply[i] + "</li>");
+      }
     event.preventDefault();
     }
   });
